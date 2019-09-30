@@ -15,7 +15,6 @@ import com.stackroute.keepnote.repository.NoteRepository;
 public class NoteRepositoryTest {
 	
 	NoteRepository noteRepository;
-
 	@Before
 	public void setup() {
 		noteRepository = new NoteRepository();

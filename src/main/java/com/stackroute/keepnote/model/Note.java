@@ -1,6 +1,7 @@
 package com.stackroute.keepnote.model;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 /*
  * The class "Note" will be acting as the data model for the Note data in the ArrayList.
@@ -14,56 +15,63 @@ public class Note {
 	 * the user but should be always initialized with the system date
 	 */
 
+	int noteId;
+	String noteTitle;
+	String noteContent;
+	String noteStatus;
+	LocalDateTime createdAt;
+
 	public Note() {
 	}
 
 	/* All the getters/setters definition should be implemented here */
 
 	public int getNoteId() {
-		return 0;
+		return noteId;
 
 	}
 
 	public void setNoteId(int intid) {
-
+		this.noteId=intid;
 	}
 
 	public String getNoteTitle() {
-		return null;
+		return noteTitle;
 	}
 
 	public void setNoteTitle(String string) {
-
+	this.noteTitle=string;
 	}
 
 	public String getNoteContent() {
-		return null;
+		return noteContent;
 	}
 
 	public void setNoteContent(String string) {
-
+	this.noteContent=string;
 	}
 
 	public String getNoteStatus() {
-		return null;
+		return noteStatus;
 	}
 
 	public void setNoteStatus(String string) {
-
+	this.noteStatus=string;
 	}
 
 	public LocalDateTime getCreatedAt() {
-		return null;
+		return createdAt;
 	}
 
 	public void setCreatedAt(LocalDateTime localdatetime) {
-
+	this.createdAt=localdatetime;
 	}
 
 	/* Override the toString() method */
 
-	@Override
-	public String toString() {
+	//@Override
+	/*public String toString() {
 		return null;
-	}
+	}*/
+
 }
